@@ -130,8 +130,8 @@ Description=Rustdesk Signal Server
 [Service]
 Type=simple
 LimitNOFILE=1000000
-ExecStart=/opt/rustdesk/hbbs -k _
-WorkingDirectory=/opt/rustdesk/
+ExecStart=/opt/rustdesk/amd64/hbbs -k _
+WorkingDirectory=/opt/rustdesk/amd64
 User=${uname}
 Group=${uname}
 Restart=always
@@ -155,8 +155,8 @@ Description=Rustdesk Relay Server
 [Service]
 Type=simple
 LimitNOFILE=1000000
-ExecStart=/opt/rustdesk/hbbr -k _
-WorkingDirectory=/opt/rustdesk/
+ExecStart=/opt/rustdesk/amd64/hbbr -k _
+WorkingDirectory=/opt/rustdesk/amd64
 User=${uname}
 Group=${uname}
 Restart=always
