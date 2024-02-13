@@ -135,8 +135,8 @@ WorkingDirectory=/opt/rustdesk/amd64
 User=${uname}
 Group=${uname}
 Restart=always
-StandardOutput=append:/var/log/rustdesk/signalserver.log
-StandardError=append:/var/log/rustdesk/signalserver.error
+StandardOutput=append:/var/log/rustdesk-server/signalserver.log
+StandardError=append:/var/log/rustdesk-server/signalserver.error
 # Restart service after 10 seconds if node service crashes
 RestartSec=10
 [Install]
@@ -160,8 +160,8 @@ WorkingDirectory=/opt/rustdesk/amd64
 User=${uname}
 Group=${uname}
 Restart=always
-StandardOutput=append:/var/log/rustdesk/relayserver.log
-StandardError=append:/var/log/rustdesk/relayserver.error
+StandardOutput=append:/var/log/rustdesk-server/relayserver.log
+StandardError=append:/var/log/rustdesk-server/relayserver.error
 # Restart service after 10 seconds if node service crashes
 RestartSec=10
 [Install]
